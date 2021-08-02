@@ -1,0 +1,433 @@
+@import url('global.css');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* ---------------------------NAV START HERE---------- */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    transition: .6s;
+    z-index: 100;
+}
+
+nav .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo h1 {
+    position: relative;
+    color: white;
+    z-index: 150;
+}
+nav .nav-list {
+    transition: .3s;
+}
+
+nav .nav-list li{
+    display: inline-flex; 
+    margin-left: 20px;  
+}
+
+nav .nav-list a {
+    color: var(--nav-text-color);
+    transition: 0.3s;
+    font-size: 17px;
+    letter-spacing: .5px;
+}
+
+nav .nav-list a:hover {
+    color: #fff;
+}
+nav .menu { 
+    display: none;
+    color: white;
+    cursor: pointer;
+    z-index: 150;
+}
+
+/* --------------------------------NAV END HERE-------- */
+
+
+
+/* ---------------------------------BANNER START HERE------------- */
+.banner {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)) , url('banner.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.banner .container {
+    /* background: red; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.banner-heading {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: white;
+    margin: 15px;
+}
+.banner-subheading {
+    color: white;
+    width: 80%;
+    text-align: center;
+}
+
+/* ---------------------------------BANNER END HERE------------- */
+
+
+
+/* -------------------- ABOUT US START HERE------- */
+.about-us .body {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.about-us .image {
+    flex: 1;
+}
+.about-us .text {
+    flex: 1;
+}
+.about-us .list i {
+    margin-right: 10px;
+    color: lightgreen;
+}
+/* -------------------- ABOUT US END HERE------- */
+
+
+
+/* ------------------- TEAM START HERE------- */
+.team .body {
+    display: flex;
+    flex-wrap: wrap;
+}
+.team .profile {
+   flex-basis: 25%;
+}
+.team .profile-wrapper {
+    margin:15px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.team .image {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    height: 250px;
+}
+.team .team-contact {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: var(--primary-color);
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: .3s;
+}
+.team .team-contact  i {
+    color: white;
+    cursor: pointer;
+}
+.team .profile-wrapper:hover  .team-contact{
+    transform: translateX(0px);            
+}
+
+.team .profile small {
+    text-transform: capitalize;
+}
+
+/* ------------------- TEAM END HERE------- */
+
+
+
+/* ----------------------- TESTIMONITAL START HERE--------- */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.swiper-slide img {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.testimonial-text {
+    width: 60%;
+    color: gray;
+    margin-bottom: 25px;
+    letter-spacing: .5px;
+}
+
+.testimonial-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mySwiper {
+    display: flex;
+    flex-direction: column;
+}
+.swiper-pagination {
+    position: relative;
+    bottom: 0;
+    /* background-color: green; */
+    margin-top:40px;
+}
+/*  */
+/* ----------------------- TESTIMONITAL START HERE--------- */
+
+
+
+/* ------------------------ CONTACT FORM START HERE------- */
+.contact-form {
+   padding: 40px;
+}
+.contact-form .contact-heading {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 42px;
+}
+.contact-form > div {
+    margin: 20px 0px;
+}
+.contact-form p {
+    margin-bottom:10px;
+}
+.contact-form input{
+    width: 100%;
+    height: 45px;
+    border-radius: 3px;
+    border: 1.5px solid lightgray;
+    padding: 0px 16px;
+    font-size: 17px;
+}
+.contact-form textarea {
+    width: 100%;
+    height: 150px;
+    padding: 16px;
+    font-size: 17px;
+    border-radius: 3px;
+    border: 1.5px solid lightgray;
+    resize: none;
+}
+.contact-form .username {
+    display: flex;
+    justify-content: space-between;
+}
+.firstname , .lastname {
+    width: 49%;
+}
+.contact-form .send-button {
+    text-align: right;
+}
+/* ------------------------ CONTACT FORM END HERE------- */
+
+
+/* --------------------------FOOTER START HERE---- */
+footer {
+    background-color: #393c58;
+    margin-bottom: 0px !important;
+}
+.footer .container {
+    padding: 50px 0px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer-content > div {
+    flex: 1;
+    /* background: orange; */
+    padding: 15px;
+}
+
+/* .footer-content > div:last-child {
+    flex: 1.5;
+} */
+.footer-heading {
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 15px;
+    color: darkgray;
+    letter-spacing: .8px;
+    line-height: 20px;
+}
+
+.quick-link .list a{
+    display:block;
+    color: darkgray;
+    margin-bottom: 10px;
+}
+
+.follow-us .list a{
+    display: inline-flex;
+    color: darkgray;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.subscribe .input {
+    display: flex;
+    background: white;
+    height: 35px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.subscribe .input input {
+    background: transparent;
+    outline: none;
+    border: none;
+    flex: 1;
+    cursor: text;
+    padding-left: 10px;
+}
+.subscribe .input button {
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 0px 10px;
+    background: var(--primary-color);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .5px;
+    cursor: pointer;
+}
+/* --------------------------FOOTER END HERE---- */
+
+/* --------------------------------------------- MEDIA QUERY----- */
+
+@media screen and (max-width : 1400px) {
+    .container {
+        max-width: 1140px;
+    }    
+}
+@media screen and (max-width : 1200px) {
+    .container {
+        max-width: 960px;
+    }    
+}
+@media screen and (max-width : 992px) {
+    .container {
+        max-width: 720px;
+    }    
+    .team .profile {
+        flex-basis:calc(100% / 3)
+     }
+     .testimonial-text {
+        width: 70%;
+    }
+}
+@media screen and (max-width : 768px) {
+    .container {
+        max-width: 540px;
+    }
+    nav .menu {
+        display: block;
+    } 
+    nav .nav-list {
+        top: 0;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -105%);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        background: white;
+        padding-top: var(--nav-height);
+        padding-bottom: 20px;
+    }  
+    nav .nav-list li{
+        width: 100%;
+        margin: 5px 0px;
+        padding: 0px 40px;
+        justify-content: center;
+
+    }
+    nav .nav-list li a{
+        color: black;
+        width: 50%;
+        padding: 10px 0px;
+        text-align: center;
+    }
+    .team .profile {
+        flex-basis:calc(100% / 2)
+     }
+     .testimonial-text {
+         width: 85%;
+     }
+     .footer-content > div {
+         flex-basis: 50%;
+     }
+}
+@media screen and (max-width : 540px) {
+    .container {
+        width: 100%;
+        padding: 0px 20px;
+    }
+    .team .profile {
+        flex-basis:calc(100%)
+     }
+     .about-us .image {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+        margin-right: 0px;
+    }
+    .about-us .text {
+        flex-basis: 100% ;
+    }
+}

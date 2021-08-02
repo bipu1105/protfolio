@@ -1,0 +1,233 @@
+:root {
+    --primary-color : salmon;
+    --text-color : darkgray;
+    --nav-text-color : lightgray;
+    --nav-height : 50px;
+    --sub-heading-color : gray;
+}
+.text-muted {
+    color:gray;
+}
+
+.text-darkgray {
+    color: darkgray;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+.section {
+    margin-top: var(--nav-height);
+    margin-bottom: var(--nav-height);
+}
+.container {
+    max-width: 1320px;
+    margin: auto;
+    /* height: 500px; */
+    /* background: orange; */
+}
+.btn{
+    background: var(--primary-color);
+    font-size: 16px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 3px;
+    letter-spacing: .5px;
+    cursor: pointer;
+}
+/* h1,h2,h3 {
+    color:var(--heading-color);
+} */
+
+.heading-wrapper {
+    margin-bottom: var(--nav-height);
+}
+.heading {
+    padding: 15px 0px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 30px;
+}
+.sub-heading {
+    padding: 10px 0px;
+    color: var(--sub-heading-color);
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: .8px;
+}
+.body-heading {
+    font-size: 25px;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+    color: var(--sub-heading-color);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details {
+    color: var(--text-color);
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+
+
+
+/* -------------------------- MARGIN--------- */
+
+.m-1 {
+    margin: .25rem;
+}
+.m-2 {
+    margin: .5rem;
+}
+.m-3 {
+    margin: 1rem;
+}
+.m-4 {
+    margin: 1.25rem;
+}
+.m-5 {
+    margin: 3rem;
+}
+
+/* --------------------- MARGIN-TOP -------- */
+
+.mt-1 {
+    margin-top: .25rem;
+}
+.mt-1 {
+    margin-top: .5rem;
+}
+.mt-3 {
+    margin-top: 1rem;
+}
+.mt-4 {
+    margin-top: 1.25rem;
+}
+.mt-5 {
+    margin-top: 3rem;
+}
+
+/* ------------------- MARGIN-BOTTOM----- */
+
+.mb-1 {
+    margin-bottom: .25rem;
+}
+.mb-2 {
+    margin-bottom: .5rem;
+}
+.mb-3 {
+    margin-bottom: 1rem;
+}
+.mb-4 {
+    margin-bottom: 1.25rem;
+}
+.mb-5 {
+    margin-bottom: 3rem;
+}
+
+
+/* ------------------- MARGIN-RIGHT----- */
+
+.me-1 {
+    margin-right: .25rem;
+}
+.me-2 {
+    margin-right: .5rem;
+}
+
+.me-3 {
+    margin-right: 1rem;
+}
+
+.me-4 {
+    margin-right: 1.25rem;
+}
+
+.me-5 {
+    margin-right: 3rem;
+}
+
+/* ------------------- MARGIN LEFT-------- */
+
+.ms-1 {
+    margin-left: .25rem;
+}
+.ms-2 {
+    margin-left: .5rem;
+}
+.ms-3 {
+    margin-left: 1rem;
+}
+.ms-4 {
+    margin-left: 1.25rem;
+}
+.ms-5 {
+    margin-left: 3rem;
+}
+
+
+/* ------------------------ MARGIN TOP AND BOTTOM-------- */
+.my-1 {
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+}
+.my-2 {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.my-3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.my-4 {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.my-5 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+/* -------------- FONT-SIZE--------- */
+.f-3 {
+    font-size: 1rem;
+}
+.f-4 {
+    font-size: 1.25rem;
+}
+
+
+
+
+
+
+/* ----------------- PADDING */
+
+.p-1 {
+    padding: .25rem;
+}
+.p-2 {
+    padding: .5rem;
+}
+.p-3 {
+    padding: 1rem;
+}

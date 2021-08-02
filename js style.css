@@ -1,0 +1,22 @@
+nav.nav-js{
+    background: white;
+    height: 50px;
+    box-shadow: 4px 0 20px -5px rgb(0 0 0 / 10%);
+}
+nav.nav-js .logo h1 {
+    color : black;
+}
+nav.nav-js .nav-list a {
+    color: black;
+}
+
+.nav-list-js {
+    transform:translate(-50% ,0) !important;
+}
+
+nav.nav-menu .menu i{
+    color: black !important;    
+}
+nav.nav-menu .logo h1 {
+    color: black !important;
+}
